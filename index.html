@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пятигорск — Туристический портал</title>
 
-    <!-- Подключение шрифта Inter -->
-    <link href="./Пятигорск — Туристический портал_files/css2" rel="stylesheet">
-
-    <!-- Подключение Font Awesome для иконок -->
-    <link rel="stylesheet" href="./Пятигорск — Туристический портал_files/css2" integrity="sha512-pIV2aEN3bE+ORCz4mKcPvsLrZNnYJ3lg8N6m3a+8PCl0qE+4Vx1s5L1Yd0XV13e5X5H6ePvgv5rRhr7eWxkg6Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- Подключение AOS (Animate On Scroll) для анимаций при прокрутке -->
-    <link href="./Пятигорск — Туристический портал_files/aos.css" rel="stylesheet">
 
     <style>
         /*
@@ -20,7 +12,7 @@
            Базовые стили и переменные
            ---------------------------------------
            Цветовая палитра сохранена с примера:
-           Основной цвет: #6C63FF (фиолетовый)
+           Основной цвет: #6C63FF (бирюзовый)
            Дополнительный цвет: #FFD700 (золотой)
            Акценты: #00BFFF (голубой), #FF6347 (помидор)
            Фоновые цвета: #F5F5F5 (светло-серый), #FFFFFF (белый)
@@ -40,8 +32,8 @@
             font-family: 'Inter', sans-serif;
             font-size: 16px;
             line-height: 1.6;
-            color: #1f1f1f;
-            background: #b1aaaa;
+            color: #a1a1a1;
+            background: #9fa39f;
         }
 
         img {
@@ -57,19 +49,19 @@
         }
 
         a:hover {
-            color: #101111;
+            color: #022001;
         }
 
         :root {
-            --primary-color: #054418;
-            --secondary-color: #05380d;
-            --accent-color1: #00BFFF;
-            --accent-color2: #FF6347;
-            --light-bg: #F5F5F5;
-            --white: #FFFFFF;
-            --dark-text: #022009;
-            --medium-text: #040e00;
-            --border-color: #E0E0E0;
+            --primary-color: #022001;
+            --secondary-color: #022001;
+            --accent-color1: #022001;
+            --accent-color2: #022001;
+            --light-bg: hsl(0, 0%, 100%);
+            --white: #ffffff;
+            --dark-text: #000000;
+            --medium-text: #000000;
+            --border-color: #798584;
             --transition-speed: 0.3s;
         }
 
@@ -242,7 +234,7 @@
         }
 
         .hero__btn:hover {
-            background: #5848c2;
+            background: #022001;
             transform: translateY(-2px);
         }
 
@@ -266,7 +258,7 @@
 
         .attractions h2 {
             font-size: 2rem;
-            color: var(--dark-text);
+            color: var(--white);
             margin-bottom: 2rem;
             text-align: center;
         }
@@ -328,6 +320,38 @@
             line-height: 1.4;
         }
 
+
+.attraction-card-cafe {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .attraction-card-cafe img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .attraction-card-cafe h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .attraction-card-cafe p {
+            font-size: 1rem;
+            color: var(--medium-text);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .attraction-card-cafe .info {
+            font-size: 0.9rem;
+            color: var(--medium-text);
+            line-height: 1.4;
+        }
         /* ---------------------------------------
            ОПТИМАЛЬНЫЙ МАРШРУТ
            --------------------------------------- */
@@ -347,7 +371,7 @@
         }
 
         .route-planner p {
-            color: var(--medium-text);
+            color: var(--dark-text);
             font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.8;
@@ -387,7 +411,7 @@
         }
 
         .route-form button:hover {
-            background: #022e0d;
+            background: #5848c2;
             transform: translateY(-2px);
         }
 
@@ -409,13 +433,13 @@
 
         .chatbot h2 {
             font-size: 2rem;
-            color: var(--dark-text);
+            color: var(--white);
             margin-bottom: 1rem;
             text-align: center;
         }
 
         .chatbot p {
-            color: var(--medium-text);
+            color: var(--white);
             font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.8;
@@ -443,7 +467,7 @@
         }
 
         .message.bot {
-            background: #022c0e;
+            background: #e7e7ff;
         }
 
         .chat-input {
@@ -475,7 +499,7 @@
         }
 
         .chat-input button:hover {
-            background: #022904;
+            background: #5848c2;
         }
 
         /* ---------------------------------------
@@ -490,14 +514,14 @@
 
         .contacts h2 {
             font-size: 2rem;
-            color: var(--dark-text);
+            color: var(--white);
             margin-bottom: 1rem;
         }
 
         .contact-info {
             margin-bottom: 2rem;
             font-size: 1rem;
-            color: var(--medium-text);
+            color: var(--white);
             line-height: 1.8;
         }
 
@@ -540,7 +564,7 @@
         }
 
         .contact-form button:hover {
-            background: #02220a;
+            background: #5848c2;
             transform: translateY(-2px);
         }
 
@@ -567,7 +591,7 @@
         }
 
         .faq__item:hover {
-            background: #e6dcc1;
+            background: #f0f0f0;
         }
 
         .faq__item h3 {
@@ -670,25 +694,24 @@
         - Главная
         - Достопримечательности
         - Маршрут
+        - Кафе и рестораны
         - Чат-бот
         - Контакты
         - FAQ
+    
     -->
     <header class="fade-in">
         <div class="logo">Пятигорск Тур</div>
-        <nav>
-            <ul>
-                <li><a href="#top" class="active">Главная</a></li>
-                <li><a href="#attractions">Достопримечательности</a></li>
-                <li><a href="#restaurant">Кафе и рестораны</a></li>
-                <li><a href="#route-planner">Маршрут</a></li>
-                <li><a href="#chatbot">Чат-бот</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
+        <button class="menu-toggle" aria-label="Открыть меню">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="navigation">
+
         </nav>
     </header>
-
+    
     <!--
         ---------------------------------------
         HERO
@@ -697,17 +720,15 @@
         Можно обновить текст на актуальный для туристического портала.
     -->
     <section class="hero fade-in" id="top">
-     
-        <img src="
-        https://avatars.mds.yandex.net/get-altay/4435487/2a0000017887ea2e24def4bdb2711e79a5a4/XXL" style="position: absolute; height: 480x; right: 60px;">
-            <canvas id="hero-3d-canvas" width="796" height="754" style="width: 796px; height: 754px;"></canvas>
-            <div class="hero__content aos-init aos-animate" data-aos="fade-up" style="color: #cbcfd1;">
-                <h1>Пятигорск — жемчужина Кавказских Минеральных Вод</h1>
-                <p>Откройте для себя уникальные термальные источники, величественные горные пейзажи и насыщенную культурно-историческую атмосферу города.</p>
-                <p><strong>Планируйте свое путешествие и откройте новые грани Южной России</strong></p>
-                <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#attractions" class="hero__btn hover-zoom">Исследовать <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </section>
+        <canvas id="hero-3d-canvas" width="796" height="754" style="width: 796px; height: 754px;"></canvas>
+        <div class="hero__content aos-init aos-animate" data-aos="fade-up">
+            <img src="orel.jpg" alt="" style="position: absolute; left: 700px;">
+            <h1>Пятигорск — жемчужина Кавказских Минеральных Вод</h1>
+            <p>Откройте для себя уникальные термальные источники, величественные горные пейзажи и насыщенную культурно-историческую атмосферу города.</p>
+            <p><strong>Планируйте свое путешествие и откройте новые грани Южной России</strong></p>
+            <a href="#attractions" class="hero__btn hover-zoom">Исследовать <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
 
     <!--
         ---------------------------------------
@@ -719,8 +740,6 @@
     -->
     <section class="attractions fade-in aos-init" id="attractions" data-aos="fade-up">
         <h2>Достопримечательности Пятигорска</h2>
-        <p style="font-size: medium;"
-        
         <div class="attractions__filter aos-init" data-aos="fade-up" data-aos-delay="100">
             <!-- Комментарий: Здесь можно реализовать реальную фильтрацию через JS. -->
             <select id="attraction-filter">
@@ -728,132 +747,131 @@
                 <option value="natural">Природные</option>
                 <option value="cultural">Культурные</option>
                 <option value="historical">Исторические</option>
+            </div>
+            </select>
+
+        </div>
+        <div class="attractions__list aos-init" data-aos="fade-up" data-aos-delay="200" id="attraction-list">
+            <!-- Пример карточек достопримечательностей -->
+            <!-- Комментарий: Заменить ссылки на реальные фото достопримечательностей. -->
+            <div class="attraction-card card hover-zoom" data-type="natural">
+                <img src="https://avatars.mds.yandex.net/get-entity_search/2431491/952331339/orig" alt="Гора Машук">
+                <h3>Гора Машук</h3>
+                <p>Горная вершина, откуда открывается панорамный вид на город и окрестности.</p>
+                <p class="info">Часы работы: Круглосуточно<br>Билеты: Подъем на канатной дороге ~300 руб.<br>Адрес: Центр города</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="natural">
+                <img src="https://avatars.mds.yandex.net/i?id=7a7ce5c90c64792af726661e35a31da1473b84f4-12438661-images-thumbs&n=13" alt="Минеральные источники">
+                <h3>Минеральные источники</h3>
+                <p>Знаменитые лечебные воды, доступные в бюветах и источниках.</p>
+                <p class="info">Часы работы: 8:00 - 20:00<br>Билеты: Бесплатно<br>Адрес: Парк «Цветник»</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="cultural">
+                <img src="https://avatars.mds.yandex.net/i?id=7188b1329a03f75db012f0514a34619db64b58bfe6b46984-13273715-images-thumbs&n=13" alt="Парк Цветник">
+                <h3>Парк Цветник</h3>
+                <p>Исторический парк с клумбами, скульптурами и кафе, место отдыха горожан.</p>
+                <p class="info">Часы работы: 8:00 - 22:00<br>Билеты: Бесплатно<br>Адрес: ул. Буачидзе, центр</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                    <img src="https://avatars.mds.yandex.net/i?id=568760f2b0563f5d86d285d9108a432c6ec47fea-8497475-images-thumbs&n=13" alt="">
+                <h3>Лермонтовские места</h3>
+                <p>Места, связанные с жизнью и творчеством М.Ю. Лермонтова (дом-музей, памятник).</p>
+                <p class="info">Часы работы: 10:00 - 18:00<br>Билеты: от 100 руб.<br>Адрес: Лермонтовская ул.</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="cultural">
+                <img src="https://avatars.mds.yandex.net/i?id=e4cb018322e75e869405084e0251e0944f2e1cba-7698965-images-thumbs&n=13" alt="Канатная дорога">
+                <h3>Канатная дорога</h3>
+                <p>Живописный подъем на гору Машук по канатной дороге.</p>
+                <p class="info">Часы работы: 9:00 - 20:00<br>Билеты: ~300 руб.<br>Адрес: У подножия Машука</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="natural">
+                <img src="https://avatars.mds.yandex.net/i?id=3ae8d3f1e77836f8e448e562e6cca649510d25d7-10549345-images-thumbs&n=13" alt="Провал">
+                <h3>Провал</h3>
+                <p>Природный колодец карстово-тектонического происхождения на южном склоне горы Машук.</p>
+                <p class="info">Часы работы: 9:00 - 20:00<br>Билеты: Бесплатно.<br>Адрес: Бульвар Гагарина.</p>
+            </div>
+            <div class="attraction-card card hover-zoom" data-type="historical">
+                <img src="https://avatars.mds.yandex.net/i?id=82092cd8f810fef1fca4eef9f59c85f90227faf9-5810594-images-thumbs&n=13" alt="Эолова арфа">
+                <h3>Эоловая арфа</h3>
+                <p>Архитектурный памятник. Павильон выполнен в античном стиле и увенчан восемью колоннами.</p>
+                <p class="info">Часы работы: Круглосуточно<br>Билеты: Бесплатно<br>Адрес: В верхнй части Машука</p>
+            </div>
+          <div class="attraction-card card hover-zoom" data-type="historical">
+                    <img src="https://avatars.mds.yandex.net/i?id=dc7753856a5f3fac278ea199cd1e31310f5aca09ca4656ea-5257239-images-thumbs&n=13" alt="Ворота Любви">
+                    <h3>Ворота Любви</h3>
+                    <p>Легенда гласит, что те, кто пройдёт через арку, будут счастливы в любви.</p>
+                    <p class="info">Часы работы: Круглосуточно.<br>Билеты: Бесплатно. <br>Адрес: Расположен в 4 км от вершины горы Машук.</p>
+         </div>
+          <div class="attraction-card card hover-zoom" data-type="historical">
+                     <img src="https://avatars.mds.yandex.net/i?id=032979bcf88f9b669cfe5a9a5dacff87691c3633-9103674-images-thumbs&n=13" alt="Орел">
+                     <h3>Орел</h3>
+                     <p>Официальный символ Кавказских Минеральных Вод.</p>
+                     <p class="info">Часы работы: Круглосуточно.<br>Билеты: Бесплатно. <br>Смотровая площадка в парке «Цветник»".</p>
+
+        </div>
+    </section>
+
+       <!--
+        ---------------------------------------
+        КАФЕ И РЕСТОРАНЫ
+        ---------------------------------------
+        Комментарий: Здесь можно заменить изображения и описания на реальные.
+        Для смены картинок: обновить src в блоках .attraction-card.
+        В фильтре добавить категории: "Все", "Природные", "Культурные", "Исторические".
+    -->
+    <section class="attractions fade-in aos-init" id="kafeandrestaurant" data-aos="fade-up">
+        <h2>Кафе и Рестораны</h2>
+        <div class="attractions__filter aos-init" data-aos="fade-up" data-aos-delay="100">
+            <!-- Комментарий: Здесь можно реализовать реальную фильтрацию через JS. -->
+            <select id="attraction-filter-cafe">
+                <option value="all_cafe">Все</option>
+                <option value="kafe">Кафе</option>
+                <option value="restaurant">Рестораны</option>
             </select>
         </div>
 
         <div class="attractions__list aos-init" data-aos="fade-up" data-aos-delay="200" id="attraction-list">
             <!-- Пример карточек достопримечательностей -->
             <!-- Комментарий: Заменить ссылки на реальные фото достопримечательностей. -->
-            <div class="attraction-card card hover-zoom" data-type="natural">
-                <img src="data:image/jpeg;base64,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" alt="Гора Машук">
-                <h3>Гора Машук</h3>
-                <p>Гора Машук — это живописные виды, множество туристических маршрутов и культурные достопримечательности.</p>
-                <p class="info">Часы работы: круглосуточно.<br>Адрес: центр города</p>
+            <div class="attraction-card-cafe card hover-zoom" data-type="kafe">
+                <img src="https://avatars.mds.yandex.net/i?id=50b237c95da22a3af6690e4611b74a8f8bfb1c86-5869591-images-thumbs&n=13" alt="Кухни Мира">
+                <h3>Кухни Мира</h3>
+                <p>Фуд-корт на территории Верхнего рынка. Здесь можно найти блюда разных кухонь мира.</p>
+                <p class="info">Часы работы: 09:00 - 21:00<br>Средний чек: ~500 руб.<br>Адрес: ул. Леваневского, 3, стр. 9.</p>
             </div>
-            <div class="attraction-card card hover-zoom" data-type="natural">
-                    <img src="data:image/jpeg;base64,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" alt="Гора Бештау">
-                    <h3>Гора Бештау</h3>
-                    <p>Бешта́у — изолированная пятиглавая гора-лакколит.</p>
-                    <p class="info">Часы работы: круглосуточно.<br>Адрес: центр города</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="cultural">
-            <img src="https://gorzelenstroykmv.ru/wp-content/uploads/2020/05/8bo093AC3.jpg" alt="Парк Цветник">
-            <h3>Парк Цветник</h3>
-            <p>Исторический парк с клумбами, скульптурами и кафе, место отдыха горожан.</p>
-            <p class="info">Часы работы: 8:00 - 22:00<br>Билеты: бесплатно<br>Адрес: ул. Буачидзе, центр</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="natural">
-            <img src="https://историческийбагаж.рф/static/post/277-8034.jpg" alt="Провал">
-            <h3>Провал</h3>
-            <p>Прова́л — природный колодец карстово-тектонического происхождения.</p>
-            <p class="info">Часы работы: 9:00 - 20:00<br>Билеты: бесплатно</p>
-        </div>
-            <div class="attraction-card card hover-zoom" data-type="natural">
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFRUXGBoaGRcYGRceGhseGxgbGhobGR0aHigiGh4lGxgXITEiJSkrLi4uGyAzODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xABGEAACAQIEAwUFBQUHAwIHAAABAhEDIQAEEjEFQVEiYXGBkQYTMqHwUrHB0eEUFSNCYjNTcoKSsvEHFqKT0jRVo7PC0+P/xAAaAQADAQEBAQAAAAAAAAAAAAABAgMABAUG/8QAJxEAAgIBBAICAgIDAAAAAAAAAAECEQMSITFBE1EEYRRxIvAjQpH/2gAMAwEAAhEDEQA/APUPZLjTZml21IdDD9qmbzG6G9ucAdJw8cTK3HePruwBw/gVCi/vKdNUYjtaFCqTzbSOdzgnM1mAkL5+DD71kj054SNqP8gur2KhxX2Qd8whpOwWmi6H1QUdV0KZUS1gQwJvqNxA1UD2/rU6deoil1BUFxIZS9tIBLzo7K9dJUgbRj2+sNIPMGSb/Xhjy7/q7wZdaVx2tQhl2aARcOZAIFr8uRAOIZoqMbK4m3Kjr2X4rk9C1jTpUa4X+RtQB1QoeUPu3ZgZAuFDNaTKb2p4xmM3WFMUNOlnptCl9WtB7wJDEEaUZ1E30EgzbFXzGbzSFVcsr0tpLLUS+kKxkMphRAN4II+IHDj2Q9sBlalQMvYqAjVALoW0wbCIFzAEkxiWq9nwPprccUstUWg6MUrtoml7p/7M64ZCCQbNUkoQRDH7F1+c4f7vJrIdWpu2ozALdieywUgw4PwmeZsBiw8G4nlaMMlREuVLstOa0g6lZFaCRK9onviJwX7SZ2QlX+C40ia1E61BC6qg0E2HukDCYKwCDvjNJq1yGLeqmUnL5RoZ3CqUcKWZSrLYiSIASLb/ABFTeDd/7SZCpSy9BQhetWAVnBAdXaUgkteBW+H4Yg2gsXPCaC1mo0XWl7xqLaqiskjSjIrFQIcTUqKATM0pO0YtuZ4a1aoiVXARQHinqUsyECCwMhRqkARc8ovXHC0JNpM8c/cFenXZ2pe6pLHuluoJcn3dLfUKZqyGUkQMStWD6C9J2qoRqUghnpqYlSeyVVVpwrFzqeQTtj0fPZE1Jy9UmGIpIFkIq6w4vG+mkx3vpUGNQAr/ALKcNTW4NQkiuHFQhXkq2nSArfwydKkhLQVUfDGEktwp7WV7JitlMtUlIeorVPebNpmAzjdF943xMBOkDkpxYKmYy1QrT1ipqTSlJqKElmqLZiUACqpELKEB1nQArDn2o45TpOuVUAFWKVfeNU0KjrDLK27QgyFEdoibnGn4U9XLLXzLLl3aVL0VRF7IbQTcNBQiYjsK8n4CCpUnQriOeM8aylPL0xoepmV92BRB/iBk0mHJkokEqeodhecUj2y4XRWrS0I6swKGSARVJ1hTqsqHWykxBNOAbscMPZriBpvVqOoqUytRRV0BKjEokU1VdQDazqIECW1Ez2cQcc9k6qVBVzNVTRNjUOho1EyqLaSC5NgBZiCIBxnO1fIVGht7PELw8e+AqCWdYjUNDBtUEdlQmlW7IKwDGCa/CcpmadXMvqbshlC6gWaWbSzbsGbSwUC0kqxDy3muUrOSKDVWamH7KktoLTAMWCiX/mI58xaw069fJjUYLBhDqS1JaTssMSoDueyApJ+EwB/LjaxdJAPYtqzLSDJTqCpUEM5OsCGDIYudIaNUEwPhuFriVWUlaRcKtZTTUwajQ8KZRfji0re5AtIPreX4atTKE5KlSc2vDEuKjlKjK5jte7Z1LkajHcMRZz/pvSqUAlNWoVQtIs3aKhkD6mUI3aYsVkSI0qeUFlF9Ab9j/wBg81UNGpUqVPeIW1KSIIUKNSm0SrBramgyJMDFux5d7A5jNUM2+WrFq1NuwCi09K+7UCSVhVGgp2ASVDqLnHp6MDt3j0MH54vB2hGjrCvivFkpkJDM9jAUkQGWb7Awfq0tMRmosxafnf8A4+WGYCve1PsxTr0CqRSIrCuSp0BmHxF2HMqT2rwYPLHnntLn2o0x7rSg9waGpH/hvSKooaiANaslSuxhjYKPjx6N7Y0cxXyz08o2liG1E2BGhhoVupYrcbQbjFQy/s3TNPKZTNopqPTPuatNmK6lf31RHJIJFRQvLnUAKwuJzTvYIFw72TzGXQ5wlMzm6peFFIsrH3ZRe060zQ1OwNSYJC6dyxKr/qHxJw9OlVSkaBpq9JkVkZmFMrUd1tJV9Z0WHZSZwfV4m9EVKfEXNZqIpsKY0+8VgwQPSqMdXaVBUeDAmIEkYIyPDDxTN06zsAlJ1qPQ0lStJw70G2h2dgxYMT2XtE4XVeyDR55++m+zT/8ASH/7MZix/wDbmZ/+W1P/AEqH/vxmJ6GGz3zGmUHfG8ZjrEOaiAgg7HFd4pwU5j3fvCgcGoCBJUowZXgGDJ1LJ5TbkTZMB1acut9iTsOY79rSLdfSeSKktxoyaexQ/brhmV0FqlR1IplQuposwlgGDKbqoiwMXMkEUxcpSztFXpgL7sNKKVZgdJLEqumARTAUxJ56yLekcV4JUzAVKzDQnvTOkFgwclSGJI06Sog81E8xit5stl6hFGkXEtULywYmpSAKUyII7QDmJYSNt8efOVNvhHZjVqluzzvLcGcliil1pkS5B0AdrtkMJ0iATIt/MDMYOSrVoMjo5LXJpumgCzhjCtMlFEmmYYyCSRGPSaVKvRqaZH8d6skLdZbsOVABPZWCCSOyLm8C5/2apfsr6jqYVP57T7syUUgBlBpliFFgxYrIIwFLZjVv+xdw9jUjM5Wg9KairmaCmSSrCpFPYaHJM7GZgRqJu3BlRzrpsyNpU3JkqWKv2WuL04uLRbc4T+yns0+WeqH7VM1A9KBAVtJZiCIOmFpi4iRti00eDIWV5lVKtT5xAM3O8l2M9YPLF8Sk3qIZGlsFcQy5JpsJlKimB0IKNPcA5Pliq8XyBFRWFNXFSrpKF9Ip6ioFQN9rVplV5VHENBxdKxIBI5A2+7FZXhdX3daq2p6pYFQCAzKpUgEEFSVIbTI6dcWzL0ieP9nnuV4W/wC0fxFbU9V4rdsgkalFIAfEGOkHUwBDHe5BlPNVszmP2Fajx/E98IQoVaDNMxJWDKi5AVQIE43m8yMucwTT/iUndFY2TQzlhpiP50+GCoixB1Eh5zjmupSDkLmIOqtcUx8WlNCgSAJSbgq29wV4Vk2o7fC3uIs0DS0oUBqDS7FTN/ihok/Z1D+m18N8tXWtQ9xVV6fu0LUyupVMmWILGzD3ZInlTI7RcnCIiqtZlKq4MklSHFyBq1Xbdhcc/TF0X2Bq1EDUMwrU3DVQsFDLqxvHLWqDlF9ouYW+DZYRilZQOGFxNNDqJY9iJDae0ARMRIgje+zYLzWdNRkFFVA7RbW61AwJAGpqhEiNMeoIkgXDIewepEJaop92GSSDFRTqewk9nYDcxvOzPO+xq1nYtrQMq0lMAGmxUOGbTAP8QLAEJ2hznDpPok3ED9lM5XyFRaTUwVqOCaaM1SA4VlZSqxChwDAjczG3qqNIB64W8Iy66VbS2un7ykGcDURrhjbcMyBp3NjzweZIBFryR3Y7MSaRyzdsD4fwalRd3QEawo0/yrp1fCvIlndidyW3wxxmMnFVSEOXSRF9wbGNjOF1SklOrUqQIdBrM80MLY2uHaTbYeTKcCZzJCoGU2VhBA032uZBuIt4nAkzCX26pOcjWCuylvsWaLSs8gYMsbKpYna9W4J+3DJtmFRGq1O3RptLaNSFUZJjQCVC6fh06SIuD6JXywq0vd1VBDKA6zY9Vm0jlykY2MuBUDiB2dJHgZX0lvW25mUlbsboSe0VKnTpLm8wuupRo1AVVVbXqQGoNBjV8GqOgOI/+nvC2pZY1KgpirmHNZ/dxolgAClp0sBrgzBdoth1nuHJVek7TNFiy3tJUqZ62Y4KpU1VQqgKqgAACAALAADYAYOpWAH/AHXS+z82/PGYKnGYOtGOpxk4WfvL+n542OJf0n1xP8j6K+CfoZTjJwu/eI6HGfvEfZON5n6B4Z+g2ugZSCAQdwbg92E/E8qrdqCCZVqiDtCbTteJi8wJ2uQU3EB9k4i/bTqkiw5T1je3UfM4nkbmuB445xdo64Lw00VKEhlBlCZ1CbmZ2v0xJmuGLUptTeCGWCYuY2JJ388c/vH+n5/pjP3j/T8/0xkmo6a2M4ZHLV2HZdNKqu8ADnyEcyT6k47BGFx4j/T8/wBMa/eX9Pz/AExRSydIXxSGerGicLDxMfZ+eI/3uOg9f0xtWUHiYH7RezozBHbCJcVLdplLAsA0WsPOI2xTuL+zuWOVR8uAhesyUzLXCh5Fzpkmmxkja1sX397joPXESZ6mAqhVAX4Ra1ot5E+uOeXx5SbdcnVjy5IJfR5/wP2ZfMFKxQmmA4ZTpDao7Qiorz2iYtup2tj1TJ5ZKSBEEAAAeXX7/EnC4cUHIRjX72H0cPjwzx8CZ5yyvcZJQA0/0lj/AKpkfP5YnnCb96jr8xjk8VHX54fTlI6B3qxmrCE8WX6P6Y5PF1+v+MHRlZtC9j/VjNeK+eLL344PGF6HG8eU2mPssXvB1GM94OuK1++l6H1GOTxtenzGD4cpqh7LN7wdcZ70dcVc8dX6Ixn79T6IwPBkNUPZZ/fDrjXvx1xV244v0ccHjnh64P4+Q3+P2Wv3464zFR/f/h643jfjZDXj9hnvx1xv9pXr8xisNXbpjX7U32fvxNHqSjRZ/wBqXr92NftS9R64rDZtukfLHP7ad8URJotXv8cHMre+2KyMwSdvrzxw2YbutiiQjLMc2OuOTm+/FaOYbqPU44qZxhuN+uHoQspzo64hbPjrivrXboOvP6OOTmGt3WxqBY9qZ7EDZw8sKDXa5CwOl/njparzBSSRNgfoYKQrkHPXY8ziM1T1OBv4u+g/6Tb1xGvvJ+H1GHRNthTVT1ONNUbvwHXqMN4MdBvjVGvNpj5ffg7CuTCWqN1OODXbqcQ6WI7BO/1tGOUWsSOyY5Sp+Q9cNsTcmEe8fcTGOWrvvJwPURwJIIvzU+sdL4grVCIEsenZ+ow2wtsYftL9/wAsRftBwEHYc+tiB9xG/hjjtk87Da23p3jBtCuw81T3421VhYz88B0hUmyk9CRb63xG1S8GT4Dn02vh0I2w45hh1GM/aW+0cLS0faB8I+vDHZqCAbm1wJscMB2Ge+brjk1jiGiobaZ2Atc9L7WxD76N1J6xaOkHr5Y2wtyDP2g9cZgf+J0/8n/PGY2wLZYf3geRB9fzxt+INFuf+L5YB96FBBXlYyOfURjj3xUxYSJiJn6GPJSR9BJjSnmGIJBgd7n8eWOaeYYiSbef5YWe9DVOQEbzHn1+WJBmQJXXF+sj74viiiiTbCRnGBgxF7x+mI2zz8gvhiJW1zqMAC5Uc+6J5YiYqNqu22o3+eGE1BCcXqLsFPiMbPtCw5IP8g/LCyrmwY7KzzP3TfBXvRoBUAOZsI2nx+jgoVuid/aKoYugnnpFr88aq8fr2ArEk8gLfM4U6HEh6ZWO64kcxEgd+MraQJJ3iwW3iTvz6YKQjbGbcarDVqqEMeU9byN8bo8TrsJ1xeBJF7eU+WEr1lZ4ItO4FyPAYhzTgEQLfXLBsS2N6/FnMyQDfYgj78a/eDWGpixB7IGxB+dsLKqUwsyGkmInUI6iwA9cRClqOlSDI3MAX5SThrFscVeLNIBLAR/Mp53Am0Wm/PpiJuION3N+5u/688KqlFxEkEbAzPcNj4emJqdSsRGq0/zCw8Ld+GX2I2HVOKsBFQtMSBtG31ONJxKTphv8UzpPhiCrl6gGtnSYkX7QgDqBIi1sLn1CbG47pjv6G23djcC2NaXE3+ENtYA785gDncYB4pnqqqLsFYi8rMczp5QCbGMDPWJAXSR3/Ib8sZRZ5YFCRz0zqBvER6mOmBKXRkuxlmszBARmKwLSA3eSSfDlz7sZlMz2wxD6YNidUnxA/DC5K0T/AA2IaIUybd/iRiLMZxyIWnoA5qt+4ExJN7YdSQrTGub4iVtZQSDpEjY85UT5YJHGaQsyD/ECQfu2t3YQ5Suva94TdSNtUSDsDHa2gzbEdN0BuC0eXPu2/wCcNdCsbVqzPU0LTNMG8EzIuQTI2jmMDZpWUmXmegt5Hn+mOMxxRXUJGkCwFvntefwwPRprpA0OCSIbVYmbysEme44NoG4ZSzIAZWWx5yJHfvfw8bYly2ciRTJg2mJiBYgEx+Iwrrl7D3e3Ihret9zjqirFoUQd7noCb+hxtTAF/vGp1/8AH9MZjr9vfqv+lfyxrBtgosa1FKwys3Q2j88a92ApZFWNwSeUc49bYQ5hiOyGU6kgXNtSUd+Qu2OKeZaTzsTpUk7oH7xEhh5nHnbro9ltPgcmDJVlFtgStxcmCCT+mIaWYK3JM9+3keX64EBIfSaZAJvBsBrK9Tt2bd+OHqHeD3js9SN5PNT6YzbBa4GrcQaNQCgG14I8h88AVqxLFjF+63lgesGMauwLwSR8x5YynlgTZtXyGNq9mUd9kEpWpgdpQSQTuQD5frgnLZ3QFCAluV2sTb4RzJ6YAzFIrGlRp69n9T3zjrhOedTb+oGWgzYwPu5c+mN5F0K4N8hWZr1gO2J7rWPeBv4GcCU/eOsATf8AmG3LyF9sdV837whSACGMqCOlgDcHY3vjrOFWAApe6EGNIEvpIksQLwSRPfh1KxJRoIy9JjqWtIAFiGUxzt37W39MLJNoJLclNon0+7HehUIlnBiACLeG3Mj9cHMlOoOxrXlpUsJJ77iLCdvPDbMm7QDRQhv4v8Md6zJPjsI+r4HKkt2YI8Dfy9cE5zJqtwCQLXH80xtYG0b88FZLIsyk00BBtq7Vo5AqLEDnbA1ejaV2znLPCaqgJESrCV57XBF+UfPbEFaoqumtqi1IkkaXsJIiCIsNjgmjnGSz0ixBK7fZAB36YGXWbWpqTYGe+yg7nv7/AAGK6kRadhK6NBdK0tAA1CPUGd4PcAeuAGzLM7QhjSU1DSqlj8R7RAgTFjynnhjXcLS904E3KWBAGwLap5yPLuxwFpCmJYgEAatI7MEWkGeXfhZyukNCLSsWNRVVOrtyLbgHkQpIuQfxxBw4mCaelFAgkkWk9/l6jE+d1RBMhVtM7ATIsDtJ2G+FFPMRqRQAphpJEyPHlufU4555HrGjBUMFA1sfiMx/MLkiLDncEze+O8ywRkVe1fXB7MW8dr25nEdLMovaRB1UnUGkEEEgtDkknp54GoJUr19ZMLMgRMCZk6YtMmPlikZvjsSSXK4Gb5gsF7MC8lnlSBtEXHMflgOs+pjoAg7RaQNt9uf64aI66CalMs2pVDEGIJEBQeZg3INhyO4dTKjWNBYjYE8jznSPHa+LqdurEeNpWMKLD3YiaTMO2NrTaw7R7Jmb+I5jZXKtRZtD03tDBhK+JmNMG0yIJxG/Ekpt8KswtqVY2gd3TmMD5Guqhp+Ik/a7ov0n8cU1LgkoE9di9TVNNW7IULKgzeRcR64I4shWQGRkndWgggATDGZIm18Y+UqaWLkAnbsqQo3EA9pSQZtHW+AqVOksqz+8MQRcAHkRyPz542qgqDYHpX+8PqPyxmDvdUfs/M/ljMDUhvFIg/bqIA7byY7JUgjspe9j2k68sZk8zTiBUAOoXMgwGax5XVv/ABjF1zGSygh2ovp1ETINMGJjX7u9hsTzxNw3gfDqoJbLKHWJh2mDewUjURcbHljz/G32d7z0uClLVVRqZ1MC0xF1gwOspiN+Mquwknv66Ty2gqcWD2l9kaIaaBjmViGEzHMA7b+u2KfxXgbUXKEsWBuLbmLc4OA1LtgWVdIPfiCgWMADbyjbrZd+hx0vEDYQB1HLbl8vTvwlWqQbk7fQ2PPnjkZ8SLwARf6NhviLTfYVkY8qZ9b3Ii5BA+Xdtv0xyudQkaTYXExztv5YRNxBVsRMyL37scUhIIUry5x5b/Pw6Y2h83QyzUuC40nsYEkiJuSJH+KB5jlgbOEnSWLELsCxI8AJhQegwiGZemtrs0AwJ+7lzk9MMsvmpUGoBPOIHkfA3+WKLLKK3JtqTGL51nXQdhsTFpB2iI5xbECZ0DVBi0doC3I3P1fEa5oCZXcGLqL7bnywHmMwokbWJMkbkSo7ha+DHO2LJL2M8xmmYXgmBBMkgSSNjfn13x0vF3QKtN2AIEnUDJ1dI7K2Fu7nhUueBDNaZvy3BvHrbrgKpUJ6xsPEEWv3YTVNgpUWAcVfVq1AN1hRc3M2uZHqMRVs2XkFu0QTMwPSQD6eGEGXzlxzA5Ry57YNyWYUTKhm6S3T+kiLW8hgvXw2CNDakwbUbA6RpJJnkBaLCBv9+CKlMwC1XfYQNo3MWgmY7heOUL+6KkktJ06T2BEWI+yQbGd9zf4iPUACkjVqBMQRBJ5lYEC0b8sBSrgq7S/ZvO0Wcl9Xu9JMAXO5FyLDbfn3bYWssEh7kwTB2AFh9Hl3Y6fOdjSTO24uIBjlY7bdNzGBqWkkSCR1kc7dm3Tn34Xdu2I5LhDL9vOkqNjup2tHh3Db1xrhuYphpViI5SCPKAIudh0wNT4kuoBXLWBa3LflvEiSTvODWp0mOvQ3vCwU6YEyJkgG8cz3jDW4uwJXsFLW96RTVdIU6p/lF5mJuZOw64hzVQI0pUVj0C7eNyV33tiDUvvbqSb6wqgiSwvGwmYPLDuhVydTR/DzMkAE0xl0EzAKoxHhePPm+OTv9hndV6BmztIUykIxa+v3a6gTGx3W478QZeoxu7agQQFJIF7Te209cNTnMotjksw0EiS+hrbhlGqCDbe97DEDZrKHfJV5j+9/Ib95x1JuqOdrc4rcUdwwISSImV5CAT3xgD3CK2opqUAkAlInlIVpPXpfB7ZrJrY5PMra5FUXnx7+WBqucotMCqoFz71liCwCgaTc9oDbqThm9qF7I/2tf7lP9AxmBf3pS/vB88ZhNP7DbJcx7Ue8XSE0iQSbsxuDLE79LAWMYK/7hzulvdK6BiCxWkBPQEkbC/PHqycAyJP8GnRDKLhTsPI9evTEI4KSQrdpC1k7JG+8XjxthFDtjuW9I8fz3FMzrU1C6MoF2tbqORPU88TP7Q1atiDUDAK2kQzAMSNWm5NgZPzx7HmvZ+k86aVMEcpAHcSAjdccZfg2Wpy0gsJELTQATAP8sn4Rzj5YVY4hbZ4bmKJHaXLvJmJmDHQHcYHajWaP4QE8uzfnbwv649yy/DqxDIHoMBOlCkiLwCttJvfEI9mWXUfemSVlaNNEFhb42JAH9DL0Ath1ij0K5Ps8a/7cdlYkKNJiQbi0wwLTzHLDOh7JFVDe9WGkrsNWkXAgkk9x9AJxdU9lXDhSXIJMl6VIqbW7UMTHTUPnjvjPsu0k6tTHYClKiLjc8uqxOrxxnjNrPMqqvTtYdNj90x+uOUzBAuDZeXLne8RePTD7iXsrnXYK0WEAhakxNpOnwHaOwGIqXsNmnOgHU1jAU+G5IW08yOWJvEMpCF+JEGQd5nkDa23j9/fgF67MDuTbfvICx1O2LRm/+n1dHWm7gVCfhAncTdgdOw2nACcAUB41nSQL6RqIMDSGg9/W+GjioHkXsRrWnfrcmZnvwRmanfBNxtFzt3bfPleC83wRksTpkAwYJOrp05d84hbg72Eiw75Nz+eDoA5r2LxUPPfzwZTqACZ/KOfO3LEy+z7wOyRveDeI6nwxHX4Q1M6p7IEm/dNhjODCpxDnzhYgACIhZMxI0+Xh/wA4lSqFKm5giQCRtJvFvrecKKLAwttVwJ6RqkjwHyxIykHmeYM3gyLjcc8TcB4z9huezOqPhM9ABE8xFxz9MD5VC7DrE/yjv3JjHFKoBM7EAcj0mOn64kyBissgWIOm2wMxYyDEemFUTSduzqoBSquEkKJE3uZO3cNo7sZlc/pYFZ2IIvvpsbbdR/hxriNQAyRqttaCTO/ONtr3xFlmYhmc9vvtA77WF8acb5Cr6GGXruXF1EysreTEje5nsm3ynB5qxUCtEXbsaTzEHcFZgDcW5GcKK+XZdIUBSBrkG5DfCIHoBY22GDMgLvqAEqdL9odozfw63264GnYfUx1UVGQs1+zJBPxMWZVG2tRBmxEwvw74CpPSVoIIO9zYknqZvzv+OI81pplR2KikTr7MEA84B0nVFo2xEy6gxCPJIGkHezbCL3G8YpC4rYSdS5C8zWBEjtH+nsx4jn5bYjyBYavfPMbSLRNt/DEWQzSSytYr/KoDMTyHaYBQOZmcR52oRAZJHVZnzABHLrjeZqQniWkaa6H20/0/pjMV/wDbKP229R+WMw/5U/Qnh/tn0Hl8/TaYZbdGS9t9u/EmYUMpUzBmYJBuOTC4N9xGKgeDKyD3GiAV1HW4JvcKyaiBuNjsMWrKZcLCCIAELqnxubnf7sUjki+jZMcl2BZ7K1dKrRZRpED3hY2Hfc+eF1KnWpTrZ+/QmpT5zP8A4jzxbBRUiwv3GR94wNXhT2mC3AkmBJ5AnfDasdiVkSK8ntC6DspYG5g8+5QSL8oxMvtClQfxNRYHkrfdO4wwzFGnU+JUqRzgNzmx8hgQ8EpFi5pk2FiW0rpmNImFN+XQYsoRJOb4ZzSMszAAyPjZCzBYkAdiLGNy22Dm44NI7dIKTA7UExawIH/F9r4Aq+zdBpLHSIuTUJt0Mm4tthHxL2dy5SpVp1qlUhWg1Wb3Qty1CD5EeOFbS4GVvnYc5rjIXaCSbKGJ1RuAbCw3vbBvBOIUyjVGamtQkiARKgbAmd4INrXx5Hm+L1EmnUqEEQCAKmo9AYEgCbA+N98HeyHFmdmSkukxd6gASL7CZLiRA53vha1NDNqKZ6RVenJcMhdjCspE7WB6iRtiv8W4MjXYkGASYkmLGAASTAH/ADibJcMhveVHVn5HQwUeC7A95JPQgWwbmKQYCxO8keXecdHjtbnG8iT2KHmXoe8dHqFti2j4ptYgSVhRzgCb4VZtUXTops/M6mbqdhA9ceiV8suk6UJJ6KPQxhDmOEbQFXs8gJMc7ETbuwrwA86FGQzUj+zKCI2WJ8TfBi0EqqVvN5Uxe9xbeBEeHfGJsrkCAQ36Y7/d2khplZOoi1iLzf1sfvw3j2FWZWIs3wKmwHK0QLcrg2i4i+98AZz2fYyVaSEKjUuwMCZWZETy54uoyBYu0mAZCxJFrQfx2OCuGZQIryWBHKSTIOoc4aCOn4jE3gstH5DR5hmaDoCWSAKYCwQQWJvHfcnrYGIxvIqUcMsTTpM5m4nSbDlsy28/H0HiVBQFLUpdjJZVNgQNxBmDNiRufEI8/wALVkYBBBk+9ETvMMYsbCxG2ITxOJ0QzKRV8zl2+JgIJgAkxN/HoTjS0GmWVoIBiQbdbcoA36c8HcRolQuqYDKw5yEUap5D4p75wLTYqwbdUVTpMFey4AN7AxzF7Yi42Xs3Tr8wY5bnxnffvxLQpudgAJPnMnlA7pwNRzAEh5UwokzUWSA0XBYCA0xq+WCsxWKBdSwGYqCrSp0gSNVwbzbcRcDE3FrgdNo4rKwbcAbwe8mxPK0H0nbB2SoF5LXV2SX2MBX1Qenwkx05xiDLZqAdzG8jqPnyv+WC0zgIKsJMEAbxcbCeZXfC63wMnYFmEcIqwxaSI+zGwUkzFz0Fsap5eowBYMt7kE6RPhzjlg4Kz6jDMILFjGnqxDTBMGYGOKKElQil5Okqpa5gnkZ5MZ264HkroDjZx+zN1/8Apt+WMwx/d+b/ALqt6r+eNYbyL0DT9jvK8bqBSKVTtAEhLT3RETzsfXbEdLjmaYnVXFjcGk07EyRq7usfLFZHDFHwMRO8n9fxw34dlKhnSJIgAkgnreLkfQ2xtNcFdb7HWV43mFJjN+7A3/hrH+nWcOuG+2jAxVcVRqA1ogUi3MEwb94352GPPMxqksDENDKf5Y3i/wCH6D0s9oqCSzAmLWgbXIaOcW7sMvYjs9jXPpVEqSwYmJjwggAfdjTEjb029YBjxOPOOGcVzFJuyytTYDV16D526/LD5PaeSBoUCJ7IIttJBJ5464/IjXByy+O3LksK5lybooHPtljHcQB8xjWZoI5BZFJBEfCTbb4j9xwtTjVFragG6MQB4iFM42eJhB/aLUn+VVCR5ljq819MNDPF8pk8nx5Lhpkme4LRqnU9NJm7lVJ/zbkeeN8N4atGdCwCN5kn/NGmO7UMRVPaGgAGhvJSxX/MWt5QMS5bj1CobVO0eTTJ827PyOLrLD2c0sOX0GhOZ0+B38iSf92O5/q26C/nzPrjgVFInVPmf+PljHMDl539CAcPGSfDOecJR5TNOT3t0t+YMYFzOXk9B4g/pOCUbeB49kR5xfEBJk2BHOw2+umKpkWAkKDEjzInBqqCOvmcR06QufqPAYKDCOYHcJ+e344IqBaWXUCI6xzN94nriejTEEEATyvt6fljFNrRH19TGO9Xp5fP6HhhWMmQZ8qFk9DH3csVfNB6Q1BoM7HSZj5EW8uuLPWGo7nbl4/XphdxGgAJse4zFjEmLjxH6ic42UhOipVuH6xUqI0dk+8RpYAMQDp5xcc/GcAVMvMmmCe0AKZEfCoY6SYmdBt4Rvi1ZTKkNKQT9kxMTBFrEbg2xHxfIaDTrUyQo1QmpgA0bmJPQflGOKcKPRwZtWzKdXyKs5U2D1fGYLAbG1qgHlgcU390IB7cs4G24YA+bmPDFiFLsQ6lKlPLgki4LEMBqHWaM7DcGJxHkeG/w3qE+7RUZtMxYVKpuLiPdrSO/wCs6vZHVq0qyp1GebT3jntc+uG9BlFJWDU2YHthtesE9JGm0iRtvY8mlbITT1FQrFTfSeXak25z9/PFdzlKorjWFkjvt0ImMJKFICmPeGUWrBgu6nVKgiSViAdtpE+G+MpBqbuv84YEBpLdm4C+XqNsV1S2olWKiwKhjy5jzBPdbBuUogt2iQeR7RbY8uZmAPXliMojqY7/AHlnP7lf9IxvCP8AbX+2P9Z/LGYUOtDvLwVAMgg7wPnMHBGQpw6vBVgPiAGlhJEMJ2n0PzX5WpUVrLboFv18fnhgmaBXkG1EEk7cwbiLyRBjzxcxH7TUCy6yCpuDpmDax7mHP8967VYgAgjUCGiZkwQb89zi3aVYMhI1G8TadwyzuDcGCYO/Upc17N1tXwExJ7Jt0vH4jCpbjatgXhVWoJIJBLGQPTp0i/TFky+fb7VxPKfDfunfuwiGSZCZDr3wdvQ4NyNKQRMnk3agDodJvPXlhnQtk3FMmKg95TIWqBqIkQ4iTpvM26fecBZXOvG48jhlk8squp84F1ncGLc/HfpjvN+z43pMJInTNx3X6YMZI0kJkz5DCDBB7/uw64Y9GqO2kNvIvPkBPj0wszXCHW5QzzIuJ8ZnEFMsna0HbwPP0wZU0CLaZYFzK07I5e47JBib3EwR8tsN+GcSJBBt3E/fIv8AXjinUeJTZhbr/wAeWCaPEwIioVE8hb5b+OAk1wabvk9EpXuCJHqPxjHJBN7/AD+6SMVnh/HnWB2WA5yZ/DD7K8TRgNwT1v5ADv8AAY7MWfqR5uf4v+0P+BOnl8v0xqfD67jPrjCO8Ad/zJONNfY7fUnpjrTPPaMkzt9357Y4Jvbl8vW4ONF9zPZ6nn07sc9JAI30/nAgDwwTGlqDfa8ct/AYiqpNzMAi0dGn8Pq4x3U689p6eHTEaCLA25eEEEnpMm3fgMKYHksmKemQLkzAgnaB6Any78R+0KzSEGNJJgzcEjpdrjbkMMd/h36/j6YDzFKbt2hI+/fr5YlOCaovjyOLsp9Z6tSoz1GQ1ajJDKYEatnH+EBe8fPnO5zUKiPq0uSjlZvoApMRa66kbpzxbuM8NWtRuNVSkIAFiVncjYkX8vDCFcqioqLScb6jE3MEEXMbGbc5xwTVM9XHPVEIp1g9NCCSLXn8bdDgas9GoIdYgXLKRN7RIHXf5Yc0VApjTpJ5AgHSbCYbaeeEmcJVjpC0wQdZj1Jmfw8Ri/KRz2lJoT5vhNIz7sA9CPtb7BbW2wpqoyxMxG/Ln+lsOm4dUDPUo/xA25ACGO4FRIHUEc98AZvLVADrPK0iwvFu6x5nHPkj2dEXYJ7xvtjGYz9ifpT+WMxz6RqLkdBUBGd4vC/EoJIJvFhtEjEHEMgWUgQSRYzeDG46i3hII5421G+pCpKmSJE23mQLb3HTE/CeJMHZCFZIJJJA3uADytbvvO2KMdCujT08785N46WOGOW4qyTpdp5AknfxkYFqsSdx0i3ptjrKZLU0yoE8yQfQ74yCyxZHjeoRUCsx2gEnzA2HfBxurQFVZpg0an+pDyjr64V1MqVAZY7oNyOskfdgnI8V7WlveLq63m0GDEn5bb4IoMaJpWcQDuBBUnqOgju5nuwLVzx6z4HcRfxOGXFabK5v2ZkctbXE+O23cdoOEFauAYIFrDf/AIwq2Y/KDl4npaxMbXPjvNsGVmVxIeG+0IAIjmORse7FeDqSYJEbapPTobYNy2YQkB1K7Qxux/MgYdi1QLWp1QTqUHwA5HnbEQC2BBBPfPptOHtDKIeyKyWuASVbw7QE2wFnciwY3kR6+YsdhfATMDGmQsxJ5T3jrzH1OC+E5sghdRI6GCbeOIVqkCSAB4YGGYCnUBfviJ8PqcNYKLrw7iLBgCBpPP8AmB6jlvEkEfm7am0Tpt0mfMnb7zik8P4wwAkBhbsx87G2+LBlapqDVRBU/ZLStv6pOnz9Ri2PPKCo5MvxYzd8DRnPj3mR6W/DHBU7mx77+Ek8+4emIFzpBOumQQLgRPncT15774LLKy6gdI5E2jqO6/LHTDPGRxZfjTg/aBmaDBmemx+e3ib4yZ5CPO/hPLEBOkGSNPWQB547p05vOruF/uOK6kQ0tdEyjvk9enh0xGEi/PlPLvxuox6AfXpjulXJFwO88sZhSOKCSPi0vpOneSefO5IkfLALL7umGLQNiJ233MXO+0fLBlaojbWjkI3/ADxXOMU8yzFqfwzdGY+o5X6Y8/Pim52uD1/iZoRg4y5OhxamQNRAJNoLEiOpPPx7vKbI8VQkI4JkxNr8o+K5v1PLebUbP5gq38UMrdQQV9QYxPwTNq9RB7xQAykljc9obffgKTQ0oqR6GMtTaQoKAcipXe/O/wCGAs57PiqJ98JTdSVPQ9qDI5b+mLVQVGbShDmASDEKCSAZgQTG3pgLP8JdiQQpBBAgDXfl8QPiI88M52iUY07RW/8AtxP6P/L88Zhl+46v2P8Aw/8A64zE/wCPopcvZWXemxkuSxUg6pBJUypEHf4QU7uXLvNU0GkAE25wD4X/AAwuNJqlQs5Gofy3i1oBmenPc4mzVM6V0mGUkzIMiJuDPT/jEbtnSzhdM8/C8919pOJaeZUGx0DoJDed49cc0lky5sREjTM9YsBP0NscZjJT2osI1dY69efKT+LgJl4kl3kqu2u3Sec8gdsZl66s41QFldNQGLz2Wi2oTyMfjjFyZUFQ9iLECCDNwDEi8SehOBvde6Ol1Mdm03EkAEwRzJIgET4jBNRYv2jshGUaYGqDtNpHUiRcH1iwfG+Cn4h2li5jYd48fo4Ayr6gI0ntAkMSL6SNU8h6XA6Ys/CM4rgrY94+vywj5NwihUsuwcgDzm/lbBYMHcgjqZH34e8fyaISy7HxseYP34SmCYUg8jsR1w6ZjtOJAWm/dt4W2w24bxFasI5IMW2/3G0+kxvhC9Ndo7R5wI+Zn0wK1BwwhrzYid9/LbBqwFt4lwjSJDahyO/deCdPicV6rl3NjAHy+u/DXhPtHoEVFJfYyd+QkRAMYMre7dSwOlgJYSQvr0P1OE3iERFdJsCPAjn0AkN5xgig7o6kMxnofK3UX+WI2IU6Y3O6lrc+R+eNq6yQItzFpP6d3IeWGuwMsyZgVbFu0o3g87w0n/jET56lGiqGsYJUwR15jl9csIf2nQeyJ8reh3Hd88NOEVhmPjChtpj0F5AsOfd1GM0KiOtk9eo06xgCwZmkmd5BE9efPC33dZKgswYcwBNhy0wSR5nFz4fkaaEOGQ90mO7kMGVsplaijtKtSJC6gSI5eQv0wqlTHcbVnnw49mNfxvZhu1p/wgeu8+mLFwzjnvBpdlk2kdeQIgEG/SPXAXEuHBDBAC/agnlsRIM+MzhfU4UriQXAG3IjvkXHrjpjNnLOEWW1wFWYCzzsJ8euFuYfmu/gY8RG4wpq5nNq2nWWQx8UGOu6nDIVyRAX4bGLgSLxMkeE4r5LI+KiDMuFANVkHUEyDe3hv9Rjjhy5RqgtS3uSAVB7zsQem/dhnmKAYTCkEQ3U9I5YW06OkHQoIvY2HrtickUiWbM8fVXWnTLAzcoV3n+aSTv4RgzL8TOktXpswvBNMz6iV9D+WKxl1zMBjT1KpIkin2RfvnzHphm7Mad1IA3ZioA7wTfC7JDNWxl+20Pp6354zC79qP8AfN/6n64zE9Q+gqS5hDvClZWFbcgk2Bki82I5dcQVuKCYGloggzbwa1upM89jGGJy4pnUxQi5gs0CBE/CASO+N/UiiKRWUVRYkWDCeUnYi+0W64RRL6hJXzoYFhT91pgPeVOwBUyQP5pm0/JeeKupdSNS3ETMQY6GeX0bncTya0ye0CGgkBjCmxBMAE7keflhWKAAiJHzF/n1wG6GQTk+KgnTMC9jsZESBHh89t8TcW4jZCG1K1ivIQBMQLDt/LuxGcgGNrlQLAQD8V/lG2NNldEAgAE7CduXLlO4/TGsxHSqW7K9mZU8wBMWH44fZPPokEnTqEmZBk9CPu8MKctTXe4vuefkPrxwQzgPqbtA3i33ERbASMx5UzK1lFJW7QNgxuRE7mfvBwCeGMJaRt/LfrN4i3ecD5evS94CAACdi1h3X3nbDoZpiQsMGFwY322jn1g4ehBO9BTYgN1BNvvA85xw+X6Qu3X7741xKqBVM+Nr+NrR+GOBnFn4h3dfy5YAxHVy7TqaZ678rXw1yuZsqtT0hRp1RLMNtwCB6chgN82hG5k2ib+o2xGOIxt53ufO+DyAkz/D5GukxkbqRcbGDzHXy8MCU6gAh/i6z6crQcWCpTFemTTLa1jcXJH8vfuIOE1ZVgAlWJEkkEFDzBmJIP3jvwFsYF9yAT37GT+H3YeZHNBYhlMc4N99zFv1wvp1Qo3UnlbvmNr7G3/GIq+cVt1UC1wYPQb/AFfBsVos5fUGZB2hewsZvPz37+WIqLsWAIJJFzyEGYsZB6H78DcF4g6AhdxYgxsZmbG032vItibN8Q1LrVQp8vC0fRHjhWYKq5gFTrF1MENbc8iehtPU+WF9TLSxKVnAnlpHIWkc56kfmKtWSp09lxeQY33kdL/QwVksrVBvT8wYEeuGsVogTIkdrW5XchjsfETbbn54Oo0KqnXrQaokMpMwN+woPXfvwVVy1SbMFm49b8vAx3eOBOIZVpLMTpBjUee/Tp4eOFeQeOO0NC6luwFLAQWJZV2nYCYx1mGUlgCgjmAxG15vsOnO3hioZ3OgWAMnpbcEGSN99r/kblaWsANUMSDtfn0MWnpOA3PmyiWOq0llyWR0UxpepUiZaUVuXMDYbCTy5TjrMlntLGN7AnvJZWt6csIcxmFCwHqwCRI7Or587fO04ny+a1HQiTtDGZ6He/n4YhUuzqel8IZfuap0fGYkmp/eH0T8sZga/sHi+iu8S/8Ah/8AO3+04io/2T+X3HGYzHZ0cPZWqm/+Q/7jjE+I/wCX7sZjMSmUQ0qf2o/wt97YkzXwf5vxOMxmMZ8mqex8ML87+JxmMw4pDk/wP3jFyb4F/wAX/uxmMw4rF/HP/wAfwGKyfixmMwEMRtv54IO58/vxmMxjFo9lPgfwH44n9qf7Y+H441jMCQI8lYofCfA/eMR574n8PxXGYzAMG8A/k/w0vvXG81svg3/3RjMZjBDcl/ZnwX/bh/kPhT/EPuOMxmFAxo+z+P4YQ5vY/wCH8BjeMxKXKOjDwxNxb4l8T+GIf5f8354zGYuiIRw3+X66Yf5TdPE/7mxmMxHLwdOHlFcxmMxmJnQf/9k=" alt="Минеральные источники">
-                <h3>Минеральные источники</h3>
-                <p>Знаменитые лечебные воды, доступные в бюветах и источниках.</p>
-                <p class="info">Часы работы: 8:00 - 20:00<br>Билеты: бесплатно<br>Адрес: парк «Цветник»</p>
+            <div class="attraction-card-cafe card hover-zoom" data-type="kafe">
+                <img src="https://avatars.mds.yandex.net/i?id=617c5b46136d6aac5a52f51fa58360f9a9c06b3e-9727996-images-thumbs&n=13" alt="1908">
+                <h3>1908</h3>
+                <p>Кофейня «1908» асположенf на первом этаже исторического здания бывшей гостиницы «Эрмитаж»</p>
+                <p class="info">Часы работы: 08:00 - 00:00<br>Средний чек: ~500 руб.<br>Адрес: ул. Октябрьская, 6.</p>
             </div>
-            <div class="attraction-card card hover-zoom" data-type="historical">
-                <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/8b06e733-13ab-4e5f-8c57-1c84b72da07f/-/format/webp/-/resize/1300x/" alt="Эолова арфа">
-                <h3>Эолова арфа</h3>
-                <p>Эолова арфа в Пятигорске — это природное образование на склоне горы Машук.</p>
-                <p class="info">Часы работы:круглосуточно<br>Билеты: 0.<br>Адрес: Парк Цветник.</p>
+            <div class="attraction-card-cafe card hover-zoom" data-type="restaurant">
+                <img src="https://avatars.mds.yandex.net/i?id=90895ec43354db4c792e971f99066eab9ed911d4-10870632-images-thumbs&n=13" alt="Tesla">
+                <h3>Tesla</h3>
+                <p>Место, где можно насладиться вкусной едой, авторскими коктейлями и уютной атмосферой.</p>
+                <p class="info">Часы работы:  09:00 - 01:00<br>Средний чек: ~2000<br>Адрес: ул. Козлова, 28.</p>
             </div>
-            <div class="attraction-card card hover-zoom" data-type="cultural">
-                <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/9a5ca2a1-1d8b-4a35-a69d-1c54b25dd8c1/" alt="Канатная дорога">
-                <h3>Канатная дорога</h3>
-                <p>Живописный подъем на гору Машук по канатной дороге.</p>
-                <p class="info">Часы работы: 9:00 - 20:00<br>Билеты: 360  руб.<br>Адрес: у подножия Машука</p>
+            <div class="attraction-card-cafe card hover-zoom" data-type="restaurant">
+                    <img src="https://avatars.mds.yandex.net/i?id=0771206e609fa6d5f119257798950fb0c37aea70-7753557-images-thumbs&n=13" alt="Цех этого города">
+                <h3>Цех этого города</h3>
+                <p>Концептуальный ресторан, в котором за вход платят, а все блюда и напитки продают по себестоимости.</p>
+                <p class="info">Часы работы: 11:00 - 01:00<br>ул. Козлова, 36Б.</p>
             </div>
-            <div class="attraction-card card hover-zoom" data-type="historical">
-                <img src="https://avatars.dzeninfra.ru/get-zen_doc/1909059/pub_637c8834a83dfd6dfbc8a672_637e78b2f184d636f3722d11/scale_1200" alt="Грот Дианы">
-                <h3>Грот Дианы</h3>
-                <p>Грот Дианы в Пятигорске — это живописное место, вырезанное в скале, названное в честь римской богини охоты..</p>
-                <p class="info">Часы работы: круглосуточно<br> Адрес: южная часть Машука</p>
-            </div>
-            <div class="attraction-card card hover-zoom" data-type="historical">
-                <img src="https://img.tourister.ru/files/2/6/3/2/5/2/7/7/original.jpg" alt="Фонтан «Сказка»">
-                <h3>Фонтан «Сказка»</h3>
-                <p>Красивый декоративный фонтан, расположенный в центральной части города.</p>
-                <p class="info">Часы работы: круглосуточно <br>Адрес: проспект Кирова</p>
-            </div>
-              
+            <div class="attraction-card-cafe card hover-zoom" data-type="restaurant">
+                <img src="https://avatars.mds.yandex.net/i?id=7ad82d426b9956f9258933c5d46958b3ecb3b4d1-4571855-images-thumbs&n=13" alt="Горы Горы">
+            <h3>Горы Горы</h3>
+            <p>Заведение находится в сердце курортной зоны города, который ведёт к знаменитому озеру Провал. Из ресторана открывается вид на Пятигорск и Кавказский хребет. </p>
+            <p class="info">Часы работы: 10:00 - 00:00<br>Средний чек: ~2000<br>бульвар Гагарина, 4/1.</p>
+           </div>
+           <div class="attraction-card-cafe card hover-zoom" data-type="kafe">
+               <img src="https://avatars.mds.yandex.net/get-altay/235931/2a00000187c3a33f518aee66d0c92c9156f4/M_height" alt="Merci">
+           <h3>Merci</h3>
+           <p>Кофейня «Merci» уютное заведение с приятной атмосферой.</p>
+          <p class="info">Часы работы: 08:00 - 00:00<br>Средний чек: ~1000<br>ул. Адмиральского, 8Б, этаж 1</p>
+         </div>
+
         </div>
     </section>
-    
-   
-    <section class="attractions fade-in aos-init" id="restaurant" data-aos="fade-up" style="text-align: center;">
-        <h2>Кафе и Рестораны</h2>
-
-            <!-- Комментарий: Здесь можно реализовать реальную фильтрацию через JS. -->
-            <select id="attraction-filter" style="text-align: center;">
-                <option value="all">Все</option>
-                <option value="kafe">Кафе</option>
-                <option value="restaurant">Рестораны</option>
-            </select>
-    <section class="attractions fade-in aos-init" id="attractions" data-aos="fade-up" style="text-align: center;">
-        <div class="attractions__filter aos-init" data-aos="fade-up" data-aos-delay="100" style="text-align: center;"></div>
-        <div class="attractions__list aos-init" data-aos="fade-up" data-aos-delay="200" id="attraction-list" style="text-align: center;">
-            <!-- Пример карточек достопримечательностей -->
-            <!-- Комментарий: Заменить ссылки на реальные фото достопримечательностей. -->
-            <div class="attraction-card card hover-zoom" data-type="restaurant">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-s/14/8e/33/9f/caption.jpg" alt="Печорин">
-                <h3>Печорин</h3>
-                <p class="info"> Кухня: Eвропейская <br>Ср.чек: 1200 <br>Адрес: пр. Кирова 25А <br>Часы работы: 9:00-00:00.</p>
-            </div>
-            <div class="attraction-card card hover-zoom" data-type="restaurant">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFxnI__60LWmZGQY5jTxZsNyyLFnkUpc9eg_e22E1qZy3LFiydMuK2Rpc5K_gnqNzgTnY&usqp=CAU" alt="К43">
-                    <h3>К43</h3>
-                    <p class="info"> Кухня: Кавказкая <br>Ср.чек: 1500 <br>Адрес: просп. Кирова, 43А<br>Часы работы: 11:00-00:00.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="restaurant">
-            <img src="https://avatars.mds.yandex.net/get-altay/11400839/2a0000018d8843e8392f34cfcfa9bab31b9b/L" alt="Маё">
-            <h3>Маё</h3>
-            <p class="info"> Кухня: Eвропейская <br>Ср.чек: 1000 <br>Адрес: ул. Панагюриште, 1 <br>Часы работы: 9:00-23:30.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="restaurant">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmT5XSEQ8iQ85JrbYO2YiksTmAmpRIIrcO1Q&s" alt="Горы-горы">
-            <h3>Горы-горы</h3>
-            <p class="info"> Кухня: Кавказкая <br>Ср.чек: 1000 <br>Адрес: бул. Гагарина, 4/1 <br>Часы работы: 10:00-00:00.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="restaurant">
-            <img src="https://make-eat.ru/assets/cache_image/assets/gallery/581/4010_0x0_ed1.jpg" alt="Крыша">
-            <h3>Крыша</h3>
-            <p class="info"> Кухня: Eвропейская, Средиземноморская <br>Ср.чек: 1500 <br>Адрес: просп. Кирова, 65, 1 <br>Часы работы: 9:00-23:30.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="restaurant">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8mlyoFfnNVmYCvYWAwrNKLyhMpZq-akQrJ5bLH3ImudyfdKzjudLSCXKoenJbQtNUK0&usqp=CAU" alt="Tesla">
-            <h3>Tesla</h3>
-            <p class="info"> Кухня: Eвропейская, Азиатская <br>Ср.чек: 1500 <br>Адрес: ул. Козлова, 28, 4/1 <br>Часы работы: 9:00-01:00.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="cafe">
-            <img src="https://avatars.mds.yandex.net/get-altay/11005869/2a0000018fb902736d8baef65db3b1dea70d/XXXL" alt="Double Couple">
-            <h3>Double Couple</h3>
-            <p class="info">Ср.чек: 800 <br>Адрес: просп. Кирова, 43 <br>Часы работы: 8:00-23:00.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="cafe">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiWs0fk6Jurc6KnVuj5_7JW8nVWo5moIpzqv2PsXz3jzJGj8STlXZzKQYhjUuu6Mr7w04&usqp=CAU" alt="1908brewbar">
-            <h3>1908brewbar</h3>
-            <p class="info">Ср.чек: 500 <br>Адрес:ул. Гоголя, 1<br> Часы работы: 8:00-00:00.</p>
-        </div>
-        <div class="attraction-card card hover-zoom" data-type="cafe">
-            <img src="https://cachizer1.2gis.com/reviews-photos/06166bc9-3fe8-49f7-b475-493d9fbb637f.jpg?w=640" alt="Smelo">
-            <h3>Smelo</h3>
-            <p class="info">Ср.чек: 800 <br>Адрес:просп. 40 лет Октября, 62А<br> Часы работы: 8:00-23:00.</p>
-        </div>
-             </div>
-</section>
 
     <!--
         ---------------------------------------
@@ -918,10 +936,10 @@
     <section class="contacts fade-in aos-init" id="contacts" data-aos="fade-up">
         <h2>Контакты</h2>
         <div class="contact-info">
-            <p>Адрес: г. Пятигорск, ул. Примерная, д. 1</p>
-            <p>E-mail: <a href="mailto:info@visit-pyatigorsk.ru">info@visit-pyatigorsk.ru</a></p>
-            <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
-            <p>Социальные сети: <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#">VK</a>, <a href="http://localhost:63342/random_number_bot/1.html?_ijt=c7ak02qdbet21amm113fo5k7t2&amp;_ij_reload=RELOAD_ON_SAVE#">Instagram</a></p>
+            <p>Адрес: г. Пятигорск, ул. Карла Маркса, д. 22</p>
+            <p>E-mail: <a href="mailto:baychorovaal@gmail.com">baychorovaal@gmail.com</a></p>
+            <p>Телефон: <a href="tel:+79276493754">+7 (927) 649-37-54</a></p>
+            <p>Социальные сети: <a href="https://vk.com/id812975199">VK</a>, <a href="https://t.me/Ptgcitytour_bot">Telegram</a></p>
         </div>
         <form class="contact-form card aos-init" data-aos="fade-up" data-aos-delay="100">
             <input type="text" placeholder="Ваш телефон или e-mail" required="">
@@ -968,18 +986,14 @@
     </footer>
 
     <!-- Подключение библиотек JS -->
-    <script src="./Пятигорск — Туристический портал_files/three.min.js.загрузка"></script>
-    <script src="./Пятигорск — Туристический портал_files/OrbitControls.min.js.загрузка"></script>
-    <script src="./Пятигорск — Туристический портал_files/aos.js.загрузка"></script>
-
     <script>
-        // -----------------------------------
-        // Инициализация AOS анимаций
-        // -----------------------------------
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+        // // -----------------------------------
+        // // Инициализация AOS анимаций
+        // // -----------------------------------
+        // AOS.init({
+        //     duration: 1000,
+        //     once: true,
+        // });
 
         // -----------------------------------
         // FAQ раскрытие
@@ -995,12 +1009,26 @@
         // Фильтрация достопримечательностей
         // -----------------------------------
         const filterSelect = document.getElementById('attraction-filter');
+        const filterSelect_cafe = document.getElementById('attraction-filter-cafe');
         const attractionCards = document.querySelectorAll('.attraction-card');
+        const attractionCards_cafe = document.querySelectorAll('.attraction-card-cafe');
 
         filterSelect.addEventListener('change', () => {
             const value = filterSelect.value;
             attractionCards.forEach(card => {
                 if (value === 'all' || card.dataset.type === value) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+
+        filterSelect_cafe.addEventListener('change', () => {
+            const value = filterSelect_cafe.value;
+            attractionCards_cafe.forEach(card => {
+                if (value === 'all_cafe' || card.dataset.type === value) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
@@ -1053,7 +1081,7 @@
             // fetch('URL_ВАШЕГО_API', {method: 'POST', body: JSON.stringify({prompt: msg})})
             //   .then(res => res.json())
             //   .then(data => { botMessage.textContent = data.answer; });
-            botMessage.textContent = `Бот: Рекомендую посетить парк «Цветник»!`;
+            botMessage.textContent = `Бот: Напиши мне в телеграм https://t.me/Ptgcitytour_bot!`;
             chatMessages.appendChild(botMessage);
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
@@ -1078,49 +1106,49 @@
         // -----------------------------------
         // 3D-анимация в HERO (демо)
         // -----------------------------------
-        const canvas = document.getElementById('hero-3d-canvas');
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
-        camera.position.set(0, 1.5, 3);
-        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-        renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
+        // const canvas = document.getElementById('hero-3d-canvas');
+        // const scene = new THREE.Scene();
+        // const camera = new THREE.PerspectiveCamera(45, canvas.clientWidth / canvas.clientHeight, 0.1, 1000);
+        // camera.position.set(0, 1.5, 3);
+        // const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+        // renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+        // renderer.setPixelRatio(window.devicePixelRatio);
 
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true;
-        controls.enablePan = false;
-        controls.minDistance = 2;
-        controls.maxDistance = 5;
+        // const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        // controls.enableDamping = true;
+        // controls.enablePan = false;
+        // controls.minDistance = 2;
+        // controls.maxDistance = 5;
 
-        const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-        scene.add(ambientLight);
+        // const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+        // scene.add(ambientLight);
 
-        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
-        directionalLight.position.set(5, 10, 7.5);
-        scene.add(directionalLight);
+        // const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+        // directionalLight.position.set(5, 10, 7.5);
+        // scene.add(directionalLight);
 
-        // Пример 3D-объекта (можно заменить моделью горы или символом города)
-        const geometry = new THREE.TorusKnotGeometry(0.6, 0.2, 100, 16);
-        const material = new THREE.MeshStandardMaterial({ color: 0x6C63FF, metalness: 0.6, roughness: 0.4 });
-        const torusKnot = new THREE.Mesh(geometry, material);
-        scene.add(torusKnot);
+        // // Пример 3D-объекта (можно заменить моделью горы или символом города)
+        // const geometry = new THREE.TorusKnotGeometry(0.6, 0.2, 100, 16);
+        // const material = new THREE.MeshStandardMaterial({ color: 0x6C63FF, metalness: 0.6, roughness: 0.4 });
+        // const torusKnot = new THREE.Mesh(geometry, material);
+        // scene.add(torusKnot);
 
-        function animate() {
-            requestAnimationFrame(animate);
-            torusKnot.rotation.x += 0.005;
-            torusKnot.rotation.y += 0.005;
-            controls.update();
-            renderer.render(scene, camera);
-        }
-        animate();
+        // function animate() {
+        //     requestAnimationFrame(animate);
+        //     torusKnot.rotation.x += 0.005;
+        //     torusKnot.rotation.y += 0.005;
+        //     controls.update();
+        //     renderer.render(scene, camera);
+        // }
+        // animate();
 
-        window.addEventListener('resize', () => {
-            const width = canvas.clientWidth;
-            const height = canvas.clientHeight;
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-            renderer.setSize(width, height);
-        });
+        // window.addEventListener('resize', () => {
+        //     const width = canvas.clientWidth;
+        //     const height = canvas.clientHeight;
+        //     camera.aspect = width / height;
+        //     camera.updateProjectionMatrix();
+        //     renderer.setSize(width, height);
+        // });
     </script>
 
 
@@ -1160,4 +1188,130 @@
       }
   };
 })();
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    console.log("Вы используете мобильное устройство.");
+    let nav = document.getElementById("navigation");
+
+nav.innerHTML = `
+<style>
+.burger-menu {
+    position: relative;
+}
+
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 21px;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Плавный переход для бургер-меню */
+}
+
+.line {
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    height: 0; /* Начальная высота */
+    overflow: hidden; /* Скрываем переполнение */
+    position: absolute;
+    top: 60px;
+    right: 0; /* Выравнивание меню вправо */
+    background-color: #fff;
+    padding: 0 10px; /* Убираем внутренние отступы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Обеспечивает видимость над другими элементами */
+    transition: height 0.3s ease; /* Плавный переход для высоты */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Убираем отступы для списка */
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.show {
+    height: auto; /* Автоматическая высота при показе */
+    padding: 10px; /* Добавляем отступы при открытом меню */
+}
+</style>
+
+<div class="burger-menu">
+    <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-links" id="nav-links">
+        <ul>
+            <li><a href="top">Главная</a></li>
+            <li><a href="#attraction">Достопримечательности</a></li>
+            <li><a href="#cafe">Кафе и Рестораны</a></li>
+            <li><a href="#route-planner">Маршрут</a></li>
+            <li><a href="#chatbot">Чат-Бот</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</div>
+`;
+
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('nav-links');
+
+burger.onclick = function(event) {
+    event.stopPropagation(); // Останавливаем событие, чтобы клик по бургеру не закрывал меню
+    const isShown = navLinks.classList.toggle('show'); // Переключаем класс для отображения меню
+    
+    // Меняем бургер-иконку на крестик (для улучшения UX)
+    const lines = document.querySelectorAll('.line');
+    if (isShown) {
+        lines[0].style.transform = "rotate(45deg) translateY(10px)";
+        lines[1].style.opacity = "0"; // Скрываем среднюю линию
+        lines[2].style.transform = "rotate(-45deg) translateY(-10px)";
+    } else {
+        lines[0].style.transform = "rotate(0) translateY(0)";
+        lines[1].style.opacity = "1"; // Показываем среднюю линию
+        lines[2].style.transform = "rotate(0) translateY(0)";
+    }
+};
+
+// Закрываем меню при клике вне бургер-меню
+document.addEventListener('click', function(event) {
+    if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show'); // Убираем класс показа меню
+        const lines = document.querySelectorAll('.line');
+        // Возвращаем бургер-иконку в исходное состояние
+        lines[0].style.transform = "rotate(0) translateY(0)";
+        lines[1].style.opacity = "1"; // Показываем среднюю линию
+        lines[2].style.transform = "rotate(0) translateY(0)";
+    }
+});
+  
+
+} else {
+    console.log("Вы используете ПК.");
+
+    let nav = document.getElementById("navigation");
+
+    nav.innerHTML = `<ul>
+                <li><a href="#top">Главная</a></li>
+                <li><a href="#attractions">Достопримечательности</a></li>
+                <li><a href="#cafe">Кафе и рестораны</a></li>
+                <li><a href="#route-planner">Маршрут</a></li>
+                <li><a href="#chatbot">Чат-бот</a></li>
+                <li><a href="#contacts">Контакты</a></li>`}
 </script></body></html>
